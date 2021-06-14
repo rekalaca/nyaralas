@@ -74,30 +74,30 @@
           <h2>Griswoldék ismét a Balatonra tartanak...</h2>
           <div class="vissza">
             <article>
-            
-            A nyaralásig még...
-            <br>
-              
-                <script language="JavaScript" type="text/javascript">
-                  function CD_UpdateDisplay(strContent, strTagId) { var objHandle = document.getElementById(strTagId); if (objHandle && (typeof objHandle.innerHTML).toString().toLowerCase() != 'undefined') { objHandle.innerHTML = strContent } }; function CD_Tick(strTagId, strEventDate) { var objDateNow = new Date(); var intMsDelay = 1000 - objDateNow.getMilliseconds(); var intEventDate = new Date(strEventDate).valueOf(); CD_DrawTime(objDateNow, strTagId, intEventDate); setTimeout("CD_Tick(\"" + strTagId + "\"," + intEventDate + ")", intMsDelay) }; function CD_DrawTime(strDate, strTagId, intEventDate) {
-                    var intMs = intEventDate - new Date(strDate).valueOf();
-                    if (intMs <= 0) { intMs = intMs * -1 }; var intDays = Math.floor(intMs / 864E5); intMs = intMs - (intDays * 864E5); var intHours = Math.floor(intMs / 36E5); intMs = intMs - (intHours * 36E5); var intMinutes = Math.floor(intMs / 6E4); intMs = intMs - (intMinutes * 6E4); var intSeconds = Math.floor(intMs / 1000); var strTimeString = intDays + " nap " + (intDays == 1 ? " " : "") + CD_ZP(intHours) + " óra " + CD_ZP(intMinutes) +
-                      " perc és " + CD_ZP(intSeconds) + " mp"; CD_UpdateDisplay(strTimeString, strTagId)
-                  }; function CD_ZP(objVal) { var str = "" + objVal; return (str.length < 2 ? "0" + str : str) }; function CD_Init() {
-                    var strTagPrefix = "countdown"; var objHandle = true; if (document.getElementById) {
-                      for (var i = 1; objHandle; ++i) {
-                        var strElementName = strTagPrefix + i; objHandle = document.getElementById(strElementName);
-                        if (objHandle && (typeof objHandle.innerHTML).toString().toLowerCase() != 'undefined') {
-                          var strDate = objHandle.innerHTML; if (!isNaN(new Date(strDate))) { CD_Tick(strElementName, strDate); if (objHandle.style) { objHandle.style.visibility = "visible" } } else { objHandle.innerHTML = strDate + "<a href=\"http://www.andrewu.co.uk/clj/countdown/\" title=\"Countdown Error:Invalid date format used,check documentation (see link)\">*</a>" }
-                        }
+
+              A nyaralásig még...
+              <br>
+
+              <script language="JavaScript" type="text/javascript">
+                function CD_UpdateDisplay(strContent, strTagId) { var objHandle = document.getElementById(strTagId); if (objHandle && (typeof objHandle.innerHTML).toString().toLowerCase() != 'undefined') { objHandle.innerHTML = strContent } }; function CD_Tick(strTagId, strEventDate) { var objDateNow = new Date(); var intMsDelay = 1000 - objDateNow.getMilliseconds(); var intEventDate = new Date(strEventDate).valueOf(); CD_DrawTime(objDateNow, strTagId, intEventDate); setTimeout("CD_Tick(\"" + strTagId + "\"," + intEventDate + ")", intMsDelay) }; function CD_DrawTime(strDate, strTagId, intEventDate) {
+                  var intMs = intEventDate - new Date(strDate).valueOf();
+                  if (intMs <= 0) { intMs = intMs * -1 }; var intDays = Math.floor(intMs / 864E5); intMs = intMs - (intDays * 864E5); var intHours = Math.floor(intMs / 36E5); intMs = intMs - (intHours * 36E5); var intMinutes = Math.floor(intMs / 6E4); intMs = intMs - (intMinutes * 6E4); var intSeconds = Math.floor(intMs / 1000); var strTimeString = intDays + " nap " + (intDays == 1 ? " " : "") + CD_ZP(intHours) + " óra " + CD_ZP(intMinutes) +
+                    " perc és " + CD_ZP(intSeconds) + " mp"; CD_UpdateDisplay(strTimeString, strTagId)
+                }; function CD_ZP(objVal) { var str = "" + objVal; return (str.length < 2 ? "0" + str : str) }; function CD_Init() {
+                  var strTagPrefix = "countdown"; var objHandle = true; if (document.getElementById) {
+                    for (var i = 1; objHandle; ++i) {
+                      var strElementName = strTagPrefix + i; objHandle = document.getElementById(strElementName);
+                      if (objHandle && (typeof objHandle.innerHTML).toString().toLowerCase() != 'undefined') {
+                        var strDate = objHandle.innerHTML; if (!isNaN(new Date(strDate))) { CD_Tick(strElementName, strDate); if (objHandle.style) { objHandle.style.visibility = "visible" } } else { objHandle.innerHTML = strDate + "<a href=\"http://www.andrewu.co.uk/clj/countdown/\" title=\"Countdown Error:Invalid date format used,check documentation (see link)\">*</a>" }
                       }
                     }
-                  }; if (window.attachEvent) { window.attachEvent('onload', CD_Init) } else if (window.addEventListener) { window.addEventListener("load", CD_Init, false) } else { window.onload = CD_Init };</script>
-                <font size="5">
-                  <font size="5"><span id="countdown1">july
-                      17 2021 08:00:00 UTC+0200</span> van hátra!</font>
-                </font>
-              
+                  }
+                }; if (window.attachEvent) { window.attachEvent('onload', CD_Init) } else if (window.addEventListener) { window.addEventListener("load", CD_Init, false) } else { window.onload = CD_Init };</script>
+              <font size="5">
+                <font size="5"><span id="countdown1">july
+                    17 2021 08:00:00 UTC+0200</span> van hátra!</font>
+              </font>
+
             </article>
           </div>
         </div>
@@ -113,7 +113,7 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">Fontos címek</a></h3>
+            <h3><a href="#services">Fontos címek</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
@@ -309,12 +309,12 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4><a href="">Orvosi Ügyelet</a></h4>
-              <p>Marcali Széchenyi u. 17. 
-                <br>
+              <p>Marcali Széchenyi u. 17.
                 (a Kórház bejárata mellett)
                 <br>
-                Telefon: 85/310-515</p>
-                <a href="http://www.balatonmariafurdo.hu/orvosi-ugyelet/">Bővebb infó</a>
+                Telefon: 85/310-515
+              </p>
+              <a href="http://www.balatonmariafurdo.hu/orvosi-ugyelet/" target=”_blank”>Bővebb infó</a>
             </div>
           </div>
 
@@ -323,7 +323,8 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4><a href="">Fogorvos</a></h4>
-              <p>A fogorvosi ügyelet <a href="http://www.balatonmariafurdo.hu/fogorvos/">ITT</a> érhető el!</p>
+              <p>A fogorvosi rendelési idők, illetve az ügyelet <a href="http://www.balatonmariafurdo.hu/fogorvos/"
+                  target=”_blank”>ITT</a> érhető el!</p>
             </div>
           </div>
 
@@ -332,8 +333,10 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
               <h4><a href="">Gyógyszertárak</a></h4>
-              <p>A környékbeli gyógyszertárak 
-              <br> listája <a href="http://www.balatonmariafurdo.hu/gyogyszertar/">ITT</a> érhető el!</p></p>
+              <p>Ha valamikor Patikát keresnén, a környékbeli gyógyszertárak listája <a
+                  href="http://www.balatonmariafurdo.hu/gyogyszertar/" target=”_blank”>ITT</a> érhető el!
+              </p>
+              </p>
             </div>
           </div>
 
@@ -344,7 +347,8 @@
               <p>Nyakas Péter személyszállító kisiparos
                 CB TAXI
                 Tel.: 85/575-175 85/575-176 Mobil:30/997-8362 Külföldről: 0036/30/9978362
-                Személyes elérhetőség:Balatonmária vasútállomás Éjszaka: Balatonmária centrum, Black Magic, Delta Club, Rezeda Szállítható személyek száma: 7 fő</p>
+                Személyes elérhetőség:Balatonmária vasútállomás Éjszaka: Balatonmária centrum, Black Magic, Delta Club,
+                Rezeda Szállítható személyek száma: 7 fő</p>
             </div>
           </div>
 
@@ -352,9 +356,13 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-cloud"></i></div>
               <h4><a href="">Helyi időjárás</a></h4>
-              <p>Na milyen lesz az időjárás?
-              <br>
-              <a href="https://www.idokep.hu/elorejelzes/Balatonm%C3%A1riaf%C3%BCrd%C5%91">[ Balatonmáriafürdő időjárása ]</a></p>
+              <p>Na milyen lesz az időjárás? Ide kattintva friss infókat, előrejelzést kapsz Balatonmáriafürdő és
+                környéke időjárásáról...
+                <br>
+                <a href="https://www.idokep.hu/elorejelzes/Balatonm%C3%A1riaf%C3%BCrd%C5%91" target=”_blank”>[
+                  Balatonmáriafürdő
+                  időjárása ]</a>
+              </p>
             </div>
           </div>
 
@@ -366,9 +374,10 @@
 
                 Balatonmáriafürdő, Bernáth Aurél sétány 2.
                 <br>
-                A balatonmáriafürdői hajóállomásról kerékpáros barát hajójáratok indulnak Balatongyörök, Balatonmáriafürdő, Szigliget és Badacsony kikötői között.
+                A balatonmáriafürdői hajóállomásról kerékpáros barát hajójáratok indulnak Balatongyörök,
+                Balatonmáriafürdő, Szigliget és Badacsony kikötői között.
                 <br>
-                <a href="http://www.balatonmariafurdo.hu/hajozas/">[ info ]</a>
+                <a href="http://www.balatonmariafurdo.hu/hajozas/" target=”_blank”>[ info ]</a>
               </p>
             </div>
           </div>
@@ -555,7 +564,7 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    
+
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -567,12 +576,17 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Vonyarc Marina</h3>
+                <h4>Elektromos hajók</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  A Vonyarc Marina több mint egy kikötő. A Balaton nyugati medencéjének egyik legújabb kikötője 85
+                  állandó és 10 vendéghellyel
+                  várja a pihenni vágyókat. Vonyarcvashegy strandja, vízi-sport központja és a környék kulturális és
+                  turisztikai látványosságai
+                  olyan vitorlás, horgász bázist képviselnek, mely a nyugalom szigetét jelenti minden tulajdonos és
+                  túrázó számára. Reméljük Önt is hamarosan tagjaink között üdvözölhetjük!
+                  <br><a href="http://vonyarcmarina.hu/hu/index.php" target=”_blank”>[ Hajóbérlés ITT! ]</a>
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -581,12 +595,18 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Gokart</h3>
+                <h4>Balaton.hu</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  Egyéni és csoportos bérgokartozás 5-10 perces futamidővel, igény szerinti bérlés feltételeit
+                  biztosítva akár pár órás használatra is, a siófoki és a balatonlellei pályákon.
+                  A gyerek gokartok 135cm testmagasságtól, felnőtt gokartok 155cm testmagasságtól és maximum 120kg
+                  súlyhatárig!, vehetők igénybe, amelyek sportos kivitelű Sodikart 270cm3, 9,5le-s Honda motorokkal
+                  szerelt gokartok.
+                  A pálya 400 m hosszú és 6 m széles, biztonságos.
+                  <br>
+                  <a href="http://www.gokartbalaton.hu/index.php?menu=hu&p=7" target=”_blank”>[ Gokart pálya ITT! ]</a>
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -595,12 +615,17 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Zobori élménypark</h3>
+                <h4>Zalaszabar</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  Hullámvasút, szabadesés torony, kötélpálya, csúszdák, beltéri játszóházak, és VR park várja a
+                  gyerekeket, így rossz idő esetére is szuper családi program a hétvégeken.
+                  A park kihagyhatatlan egy balatoni hétvége alatt, ahol a megszokott élményeken túl még eggyel feljebb
+                  tekerheted a MAX gombot a saját lelked élménymutatóján.
+                  <br>
+                  <a href="https://zobori.hu/hirek/minden-szombaton-es-vasarnap-varunk" target=”_blank”>[ Élmények ITT!
+                    ]</a>
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -609,12 +634,15 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>Bahart Hajóállomás</h3>
+                <h4>Gyerekhajó, Sétahajó, DISZKÓ hajó</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  A balatonmáriafürdői hajóállomásról indulnak a Balatoni Hajózási Zrt. sétahajó járatai, a gyerekhajók
+                  és a retro diszkóhajók.Jegyváltás a Turisztikai Információs Irodában és a kikötőben lehetséges.
+                  <br>
+                  <a href="http://www.csaladibalaton.hu/helyi-ertekek/bahart-hajoallomas-101.html" target=”_blank”>[
+                    Hajók ITT! ]</a>
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -623,12 +651,17 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>West of Balaton</h3>
+                <h4>A nagy kedvezmények...</h4>
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  A West of Balaton a Nyugat-balatoni térség legjobb programjait gyűjti egy csokorba, és 20% kedvezményt
+                  biztosít programban szereplő partnereknél.
+                  Akár egy fagyizás árát is megspórolhatod, ha zsebrevágod a West of Balaton helyszíneken kapott
+                  belépőjegyedet! Nem kell mást tenni, mint a következő látogatóhelyen felmutatni, és már jóvá is írják
+                  a 20% kedvezményt!
+                  <a href="https://csodalatosbalaton.hu/hirek/west-of-balaton/west-of-balaton-20-kedvezmeny-a-nyugat-balaton-legjobb-helyeire/"
+                    target=”_blank”>[ Kedvezmények ITT! ]</a>
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
               </div>
@@ -733,14 +766,12 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
+          <h2>Levendula Apartman</h2>
+          <p>A szállás és környéke</p>
         </div>
 
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-            frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5471.716477283751!2d17.362218308175596!3d46.708531378077716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4768ff3cd56743c5%3A0x5335c40461b3047!2sLevendula%20Apartman!5e0!3m2!1shu!2shu!4v1623655612091!5m2!1shu!2shu" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div class="row mt-5">
@@ -749,52 +780,21 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
+                <h4>Cím:</h4>
+                <p>Balatonmáriafürdő, Vilma u. 62, 8647</p>
+              </div>             
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <h4>Név / Telefon:</h4>
+                <p>Faházi-Takács Beatrix / <a href="tel:+36304824651">+36 30 4824651</a></p>
               </div>
 
             </div>
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
+          
 
         </div>
 
@@ -804,75 +804,17 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <h3>Gp<span>.</span></h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+  <footer id="footer">    
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>R.L</span></strong>. minden jog fenntartva!
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://rekalaca.com/">[ rekalaca ]</a>
       </div>
     </div>
   </footer><!-- End Footer -->
